@@ -1,0 +1,3 @@
+Requirement already satisfied: potpourri3d in /usr/local/python/3.12.1/lib/python3.12/site-packages (1.4.0)
+Requirement already satisfied: numpy in /usr/local/python/3.12.1/lib/python3.12/site-packages (from potpourri3d) (2.5.1)
+Requirement already satisfied: scipy in /usr/local/python/3.12.1/lib/python3.12/site-packages (from potpourri3d) (1.18.0)
