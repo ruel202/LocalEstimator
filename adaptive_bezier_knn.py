@@ -15,15 +15,6 @@ The algorithm runs a local reconstruction at every input point:
   5. Neighborhood radius <= practical variogram range.
   6. Reconstruction RMSE <= adaptive normal-displacement tolerance.
 
-Important:
-- The variogram practical range is a spatial-radius limit.
-- The variogram sill is converted to a vertical/normal-displacement scale.
-- This script uses epsilon = z * sqrt(sill). This is a tunable statistical
-  tolerance, not a universal theorem guaranteeing a geometric error bound.
-- The default fit is not forced to be convex: real surfaces may be saddle-shaped.
-  Optional sampled convexity constraints are available in fit_bezier_patch().
-- Degree-(2,2) tensor-product Bezier has 9 control heights, not 6.
-  Six controls describe a triangular quadratic Bezier patch.
 """
 
 from __future__ import annotations
